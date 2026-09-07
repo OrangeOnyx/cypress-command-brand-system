@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "packagedRendererAttempt": "Failed with FileNotFoundError: LibreOffice soffice.exe was not found on PATH; runtime-only PATH used, no installed LibreOffice invoked.",
+  "rendererUsed": "Microsoft Word COM hidden isolated instance, read-only source documents, updated fields, PDF export; Poppler rasterized PDF at 120dpi.",
+  "systemFontsInstalled": false,
+  "macros": false,
+  "documents": [
+    {
+      "file": "Cypress_Command_Letterhead.docx",
+      "sha256": "e3d6d2654ac03d2f6f5999b5bbc46f2ce79b7690661703375d0b4c95505902f6",
+      "pages": 1,
+      "placeholderOccurrences": 13,
+      "embeddedFontPayloads": [
+        "CypressInter-Regular.ttf",
+        "CypressInter-Bold.ttf",
+        "CypressFraunces-Regular.ttf"
+      ],
+      "fontsMatchBundledSources": true,
+      "visiblePdfTextUsesEmbeddedFontsOnly": true,
+      "horizontalHeaderLogoWidthInches": 2.6,
+      "horizontalHeaderLogoWidthMillimeters": 66.04,
+      "unresolvedWebsitePlaceholders": 0,
+      "pdfFontResourcesUsedByVisibleText": [
+        "/BCDEEE+___WRD_EMBED_SUB_46",
+        "/BCDFEE+___WRD_EMBED_SUB_49"
+      ],
+      "macroFree": true,
+      "externalRelationships": 0,
+      "dotxMatchesDocxLayout": true,
+      "dotxNativeWordOpenCheck": "Passed using Documents.Add; 1/3/3 page counts matched corresponding DOCX files.",
+      "pageNumberFields": true,
+      "visualInspection": "All final page PNGs reviewed; no clipped text, missing glyphs, broken tables, overlap, or header/footer placement defects."
+    },
+    {
+      "file": "Cypress_Command_Operating_Report.docx",
+      "sha256": "bd12ee2c6e4fc642f55daf83c4e381f49e902647c24128015badbc3aee957ef2",
+      "pages": 3,
+      "placeholderOccurrences": 76,
+      "embeddedFontPayloads": [
+        "CypressInter-Regular.ttf",
+        "CypressInter-Bold.ttf",
+        "CypressFraunces-Regular.ttf"
+      ],
+      "fontsMatchBundledSources": true,
+      "visiblePdfTextUsesEmbeddedFontsOnly": true,
+      "horizontalHeaderLogoWidthInches": 2.6,
+      "horizontalHeaderLogoWidthMillimeters": 66.04,
+      "unresolvedWebsitePlaceholders": 0,
+      "pdfFontResourcesUsedByVisibleText": [
+        "/BCDEEE+___WRD_EMBED_SUB_46",
+        "/BCDFEE+___WRD_EMBED_SUB_49",
+        "/BCDGEE+___WRD_EMBED_SUB_46,Bold"
+      ],
+      "macroFree": true,
+      "externalRelationships": 0,
+      "dotxMatchesDocxLayout": true,
+      "dotxNativeWordOpenCheck": "Passed using Documents.Add; 1/3/3 page counts matched corresponding DOCX files.",
+      "pageNumberFields": true,
+      "visualInspection": "All final page PNGs reviewed; no clipped text, missing glyphs, broken tables, overlap, or header/footer placement defects."
+    },
+    {
+      "file": "Cypress_Command_Proposal.docx",
+      "sha256": "c2d28bede231230b47c296ae403b7433aa3444b2026fa6690ca517d20feda348",
+      "pages": 3,
+      "placeholderOccurrences": 46,
+      "embeddedFontPayloads": [
+        "CypressInter-Regular.ttf",
+        "CypressInter-Bold.ttf",
+        "CypressFraunces-Regular.ttf"
+      ],
+      "fontsMatchBundledSources": true,
+      "visiblePdfTextUsesEmbeddedFontsOnly": true,
+      "horizontalHeaderLogoWidthInches": 2.6,
+      "horizontalHeaderLogoWidthMillimeters": 66.04,
+      "unresolvedWebsitePlaceholders": 0,
+      "pdfFontResourcesUsedByVisibleText": [
+        "/BCDEEE+___WRD_EMBED_SUB_46",
+        "/BCDFEE+___WRD_EMBED_SUB_49",
+        "/BCDGEE+___WRD_EMBED_SUB_46,Bold"
+      ],
+      "macroFree": true,
+      "externalRelationships": 0,
+      "dotxMatchesDocxLayout": true,
+      "dotxNativeWordOpenCheck": "Passed using Documents.Add; 1/3/3 page counts matched corresponding DOCX files.",
+      "pageNumberFields": true,
+      "visualInspection": "All final page PNGs reviewed; no clipped text, missing glyphs, broken tables, overlap, or header/footer placement defects."
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+/* CYPRESS COMMAND / BRAND SYSTEM 1.0
+ * Approved identity and supporting UI system, 6 September 2026.
+ * Exact five-color core; derived neutrals below are functional utilities only.
+ * Load local font faces separately. No remote imports or runtime logo typesetting.
+ */
+:root {
+  --cc-cypress: #1E4D3A;
+  --cc-moss: #2F6B4E;
+  --cc-amber: #D97706;
+  --cc-charcoal: #0A1F16;
+  --cc-bone: #F3EDE0;
+
+  --cc-neutral-white: #FFFFFF;
+  --cc-neutral-surface: #F9F6F0;
+  --cc-neutral-70-charcoal: #505D53;
+  --cc-neutral-60-charcoal: #677167;
+  --cc-neutral-80-bone: #C4C4B8;
+  --cc-neutral-70-bone: #ADAFA3;
+  --cc-neutral-20-bone: #39483E;
+
+  --cc-font-display: "Fraunces", Georgia, serif;
+  --cc-font-body: "Inter", "Segoe UI", Arial, sans-serif;
+  --cc-font-id: "JetBrains Mono", Consolas, monospace;
+  /* Montserrat is reserved for supplied outlined wordmark assets. */
+  --cc-weight-regular: 400;
+  --cc-weight-display: 450;
+  --cc-weight-medium: 500;
+  --cc-weight-semibold: 600;
+  --cc-weight-bold: 700;
+  --cc-type-caption: 0.75rem;
+  --cc-type-small: 0.875rem;
+  --cc-type-body: 1rem;
+  --cc-type-lead: 1.125rem;
+  --cc-type-h3: 1.5rem;
+  --cc-type-h2: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  --cc-type-h1: clamp(2.25rem, 1.5rem + 3vw, 3.5rem);
+  --cc-type-display: clamp(2.75rem, 1.75rem + 4vw, 4.5rem);
+  --cc-leading-display: 1.12;
+  --cc-leading-heading: 1.2;
+  --cc-leading-body: 1.6;
+  --cc-leading-ui: 1.4;
+  --cc-tracking-display: -0.02em;
+  --cc-tracking-label: 0.08em;
+
+  --cc-space-0: 0;
+  --cc-space-1: 4px;
+  --cc-space-2: 8px;
+  --cc-space-3: 12px;
+  --cc-space-4: 16px;
+  --cc-space-5: 20px;
+  --cc-space-6: 24px;
+  --cc-space-8: 32px;
+  --cc-space-10: 40px;
+  --cc-space-12: 48px;
+  --cc-space-16: 64px;
+  --cc-space-20: 80px;
+  --cc-space-24: 96px;
+  --cc-radius-none: 0;
+  --cc-radius-small: 2px;
+  --cc-radius-control: 4px;
+  --cc-radius-panel: 8px;
+  --cc-radius-avatar: 50%;
+  --cc-border-width: 1px;
+  --cc-control-min-height: 44px;
+  --cc-container: 1200px;
+  --cc-reading-width: 68ch;
+  --cc-gutter: clamp(16px, 4vw, 40px);
+  --cc-motion-fast: 120ms;
+  --cc-motion-standard: 200ms;
+  --cc-ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:root, [data-cc-theme="light"] {
+  color-scheme: light;
+  --cc-bg: var(--cc-bone);
+  --cc-surface: var(--cc-neutral-surface);
+  --cc-surface-raised: var(--cc-neutral-white);
+  --cc-text: var(--cc-charcoal);
+  --cc-text-secondary: var(--cc-cypress);
+  --cc-text-muted: var(--cc-neutral-70-charcoal);
+  --cc-link: var(--cc-cypress);
+  --cc-link-hover: var(--cc-charcoal);
+  --cc-border-control: var(--cc-neutral-60-charcoal);
+  --cc-divider: var(--cc-neutral-80-bone);
+  --cc-action-bg: var(--cc-cypress);
+  --cc-action-text: var(--cc-bone);
+  --cc-action-hover-bg: var(--cc-charcoal);
+  --cc-action-hover-text: var(--cc-bone);
+  --cc-accent-bg: var(--cc-amber);
+  --cc-accent-text: var(--cc-charcoal);
+  --cc-focus: var(--cc-cypress);
+  --cc-focus-gap: var(--cc-bone);
+  --cc-status-text: var(--cc-charcoal);
+  --cc-status-success-mark: var(--cc-moss);
+  --cc-status-attention-mark: var(--cc-charcoal);
+  --cc-status-attention-fill: var(--cc-amber);
+  --cc-selection-bg: var(--cc-cypress);
+  --cc-selection-text: var(--cc-bone);
+  --cc-shadow-panel: 0 4px 16px rgb(10 31 22 / 0.08);
+}
+
+[data-cc-theme="dark"] {
+  color-scheme: dark;
+  --cc-bg: var(--cc-charcoal);
+  --cc-surface: var(--cc-cypress);
+  --cc-surface-raised: var(--cc-cypress);
+  --cc-text: var(--cc-bone);
+  --cc-text-secondary: var(--cc-bone);
+  --cc-text-muted: var(--cc-neutral-80-bone);
+  --cc-link: var(--cc-bone);
+  --cc-link-hover: var(--cc-neutral-white);
+  --cc-border-control: var(--cc-neutral-70-bone);
+  --cc-divider: var(--cc-neutral-20-bone);
+  --cc-action-bg: var(--cc-bone);
+  --cc-action-text: var(--cc-charcoal);
+  --cc-action-hover-bg: var(--cc-neutral-white);
+  --cc-action-hover-text: var(--cc-charcoal);
+  --cc-accent-bg: var(--cc-amber);
+  --cc-accent-text: var(--cc-charcoal);
+  --cc-focus: var(--cc-bone);
+  --cc-focus-gap: var(--cc-charcoal);
+  --cc-status-text: var(--cc-bone);
+  --cc-status-success-mark: var(--cc-bone);
+  --cc-status-attention-mark: var(--cc-charcoal);
+  --cc-status-attention-fill: var(--cc-amber);
+  --cc-selection-bg: var(--cc-bone);
+  --cc-selection-text: var(--cc-charcoal);
+  --cc-shadow-panel: none;
+}
+
+/* Opt-in UI styles. Apply .cc-ui at a theme root; do not apply to logo artwork. */
+.cc-ui {
+  background: var(--cc-bg);
+  color: var(--cc-text);
+  font-family: var(--cc-font-body);
+  font-size: var(--cc-type-body);
+  font-weight: var(--cc-weight-regular);
+  line-height: var(--cc-leading-body);
+}
+.cc-ui, .cc-ui * { box-sizing: border-box; }
+.cc-ui :is(button, input, select, textarea) { font: inherit; }
+.cc-display, .cc-h1, .cc-h2 {
+  font-family: var(--cc-font-display);
+  font-weight: var(--cc-weight-display);
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  letter-spacing: var(--cc-tracking-display);
+  line-height: var(--cc-leading-display);
+}
+.cc-display { font-size: var(--cc-type-display); }
+.cc-h1 { font-size: var(--cc-type-h1); }
+.cc-h2 { font-size: var(--cc-type-h2); line-height: var(--cc-leading-heading); }
+.cc-h3 {
+  font-family: var(--cc-font-body);
+  font-weight: var(--cc-weight-semibold);
+  font-size: var(--cc-type-h3);
+  line-height: var(--cc-leading-heading);
+}
+.cc-label {
+  font-family: var(--cc-font-body);
+  font-weight: var(--cc-weight-semibold);
+  font-size: var(--cc-type-caption);
+  letter-spacing: var(--cc-tracking-label);
+  line-height: var(--cc-leading-ui);
+  text-transform: uppercase;
+}
+.cc-id {
+  font-family: var(--cc-font-id);
+  font-size: var(--cc-type-small);
+  font-weight: var(--cc-weight-regular);
+  font-variant-numeric: tabular-nums;
+}
+.cc-ui a:not(.cc-button) {
+  color: var(--cc-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.08em;
+}
+.cc-ui a:not(.cc-button):hover { color: var(--cc-link-hover); }
+.cc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cc-space-2);
+  min-height: var(--cc-control-min-height);
+  padding: var(--cc-space-2) var(--cc-space-4);
+  border: var(--cc-border-width) solid var(--cc-border-control);
+  border-radius: var(--cc-radius-control);
+  color: var(--cc-action-text);
+  background: var(--cc-action-bg);
+  font-family: var(--cc-font-body);
+  font-weight: var(--cc-weight-semibold);
+  line-height: var(--cc-leading-ui);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--cc-motion-fast) var(--cc-ease), color var(--cc-motion-fast) var(--cc-ease);
+}
+.cc-button:hover { color: var(--cc-action-hover-text); background: var(--cc-action-hover-bg); }
+.cc-button--accent, .cc-button--accent:hover {
+  color: var(--cc-accent-text);
+  background: var(--cc-accent-bg);
+}
+.cc-button--accent:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+.cc-ui :disabled { cursor: not-allowed; }
+.cc-ui :focus-visible {
+  outline: 3px solid var(--cc-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--cc-focus-gap);
+}
+.cc-ui ::selection { color: var(--cc-selection-text); background: var(--cc-selection-bg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-ui, .cc-ui *, .cc-ui *::before, .cc-ui *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (forced-colors: active) {
+  .cc-ui :focus-visible { outline: 3px solid Highlight; box-shadow: none; }
+  .cc-button { border: 1px solid ButtonText; }
+}

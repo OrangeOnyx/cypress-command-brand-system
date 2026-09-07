@@ -1,0 +1,17 @@
+{
+  "brand": "Cypress Command",
+  "version": "1.0.1",
+  "status": "approved",
+  "approvedOn": "2026-09-06",
+  "approvedBy": "Adam Abdalla",
+  "approvalScope": "04C vector reconstruction, outlined wordmark, five-color palette and curated supporting design system",
+  "tagline": "Systems under control. Results that last.",
+  "character": "Institutional authority + modern systems thinking + rooted durability",
+  "primaryLogo": "logos/svg/cc-04c-horizontal-primary.svg",
+  "coreColors": {"cypress":"#1E4D3A","moss":"#2F6B4E","amber":"#D97706","charcoal":"#0A1F16","bone":"#F3EDE0"},
+  "typography": {"display":"Fraunces","body":"Inter","identifiers":"JetBrains Mono","wordmark":"Supplied outlined artwork only"},
+  "contact": {"name":"Adam Abdalla","role":"Owner / Founder","email":null,"phone":null,"website":"https://cypresscommand.com","address":"532 Alonda Drive, Lafayette, LA 70503"},
+  "contactStatus": "Email and phone remain unconfirmed and must be supplied before publishing personalized materials",
+  "constraints": ["Never remove center square","Never distort logo","04D framing is supporting language only","No literal tree motifs","No generic AI or circuit motifs","No unverified claims or company metrics"],
+  "sourceZipSha256": "566B2E57F40E1AA9FF3D17C0DA6515C2C1B96BF3836A8DE6AA587AB295EB8563"
+}

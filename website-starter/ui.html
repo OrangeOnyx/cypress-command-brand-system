@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1E4D3A">
+  <title>Cypress Command — UI component reference</title>
+  <link rel="icon" href="logos/png/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="tokens/brand-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="cc-ui">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="wrap ui-header"><a href="index.html"><img src="logos/svg/cc-04c-horizontal-primary.svg" width="260" height="90" alt="Cypress Command home"></a><a href="index.html">Website starter</a></header>
+  <main class="wrap" id="main">
+    <section class="ui-intro" aria-labelledby="ui-title"><h1 class="cc-h1" id="ui-title">The working interface.</h1><p>This reference uses the same shared color, type, spacing, and interaction tokens as the website. Every record and interaction below is an illustrative sample. Nothing is saved or sent.</p><div class="theme-switch" role="group" aria-label="Component preview theme"><button class="cc-button" type="button" data-theme-choice="light" aria-pressed="true">Light theme</button><button class="cc-button secondary" type="button" data-theme-choice="dark" aria-pressed="false">Dark theme</button></div><p id="theme-status" class="demo-status" role="status" aria-live="polite">Light theme component preview selected.</p></section>
+    <section id="component-preview" class="ui-demo cc-ui" data-cc-theme="light" aria-labelledby="preview-title">
+      <div class="demo-heading"><h2 class="cc-h2" id="preview-title">Component reference</h2><span class="sample-note">Illustrative sample only</span></div>
+      <div class="ui-grid">
+        <div>
+          <section class="ui-block" aria-labelledby="actions-title"><h3 id="actions-title">Actions</h3><div class="button-row"><button class="cc-button" type="button" data-demo-message="Preview action complete. No record was changed.">Primary action</button><button class="cc-button secondary" type="button" data-demo-message="Secondary action previewed. Nothing was sent.">Secondary</button><button class="cc-button cc-button--accent" type="button" data-demo-message="Attention action previewed. No data was submitted.">Review item</button></div><p class="sample-note">State references</p><div class="button-row"><button class="cc-button button-hover" type="button" data-demo-message="Hover reference activated.">Hover</button><button class="cc-button button-focus" type="button" data-demo-message="Focus reference activated.">Focus</button><button class="cc-button" type="button" disabled>Unavailable</button></div><p id="demo-status" class="demo-status" role="status" aria-live="polite">Choose an enabled button to preview feedback.</p></section>
+          <section class="ui-block" aria-labelledby="fields-title"><h3 id="fields-title">Inputs and validation</h3><div class="field"><label for="sample-record-name">Record name</label><input id="sample-record-name" value="Sample operating plan" autocomplete="off" aria-describedby="record-name-hint"><small id="record-name-hint">Local sample input. Edits are not retained.</small></div><div class="field"><label for="sample-reference">Reference ID</label><input id="sample-reference" class="cc-id" value="CC-" autocomplete="off" aria-invalid="true" aria-describedby="reference-error"><small id="reference-error" class="field-error"><span class="error-sign" aria-hidden="true">×</span><span>Error: enter the full reference, such as CC-DEMO-001. Static validation example.</span></small></div></section>
+        </div>
+        <section class="ui-block" aria-labelledby="feedback-title"><h3 id="feedback-title">Status and feedback</h3><div class="notice"><span class="notice-icon success-icon" aria-hidden="true">✓</span><p><strong>Complete</strong>The sample review is complete. No live record was updated.</p></div><div class="notice"><span class="notice-icon attention-icon" aria-hidden="true">△</span><p><strong>Warning</strong>The sample contact details are incomplete. Add verified details before use.</p></div><div class="notice"><span class="notice-icon attention-icon" aria-hidden="true">×</span><p><strong>Error</strong>The sample reference is incomplete. Enter the complete ID and try again.</p></div><div class="empty-state"><h3>No documents yet</h3><p>Add a document to begin organizing this record.</p><button class="cc-button secondary" type="button" data-demo-message="Add-document interaction previewed. This reference does not upload files.">Preview add document</button></div></section>
+      </div>
+      <section aria-labelledby="records-title"><h3 id="records-title">Records</h3><div class="field"><label for="record-filter">Filter sample records</label><input type="search" id="record-filter" autocomplete="off" placeholder="Search by name, ID, or status" aria-describedby="filter-status"><small id="filter-status" role="status" aria-live="polite">3 sample records shown.</small></div><div class="table-wrap" tabindex="0" role="region" aria-label="Sample records table"><table><caption>Illustrative records, not company data</caption><thead><tr><th scope="col">Reference</th><th scope="col">Record</th><th scope="col">Status</th></tr></thead><tbody><tr data-sample-record><td class="cc-id">CC-DEMO-001</td><td>Sample operating plan</td><td><span class="status-tag"><span class="status-dot" aria-hidden="true"></span>✓ Complete</span></td></tr><tr data-sample-record><td class="cc-id">CC-DEMO-002</td><td>Sample property review</td><td><span class="status-tag">△ Review needed</span></td></tr><tr data-sample-record><td class="cc-id">CC-DEMO-003</td><td>Sample workflow</td><td><span class="status-tag">Draft</span></td></tr></tbody></table></div><div id="no-results" class="empty-state" hidden><h3>No matching sample records</h3><p>Try another name, ID, or status, or clear the filter.</p></div></section>
+    </section>
+    <p class="ui-bottom">Use the supplied <a href="tokens/brand-tokens.css">CSS tokens</a> and <a href="tokens/brand-tokens.json">JSON token reference</a> in implementation. Component examples are not a live operations product or an accessibility certification.</p>
+  </main>
+</body>
+</html>

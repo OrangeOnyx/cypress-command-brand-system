@@ -1,0 +1,9 @@
+# Distribution archives are created locally; source assets and editable files are versioned.
+*.zip
+
+# Generated/local runtime artifacts
+node_modules/
+qa/
+word-render/
+*.log
+*.tmp

@@ -1,0 +1,14 @@
+# Keep binary design assets out of line-ending and whitespace transforms.
+*.pdf binary
+*.docx binary
+*.dotx binary
+*.pptx binary
+*.potx binary
+*.png binary
+*.ico binary
+*.woff2 binary
+*.ttf binary
+*.ase binary
+
+# Preserve upstream font license text verbatim.
+*-OFL.txt -whitespace

@@ -1,0 +1,69 @@
+[
+  {
+    "file": "CypressInter-Regular.ttf",
+    "family": "Cypress Inter",
+    "style": "Regular",
+    "weight": 400,
+    "source": "Inter-400.woff2",
+    "axes": {},
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressInter-Medium.ttf",
+    "family": "Cypress Inter",
+    "style": "Medium",
+    "weight": 500,
+    "source": "Inter-400.woff2",
+    "axes": {},
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressInter-SemiBold.ttf",
+    "family": "Cypress Inter",
+    "style": "SemiBold",
+    "weight": 600,
+    "source": "Inter-400.woff2",
+    "axes": {},
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressInter-Bold.ttf",
+    "family": "Cypress Inter",
+    "style": "Bold",
+    "weight": 700,
+    "source": "Inter-400.woff2",
+    "axes": {},
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressFraunces-Regular.ttf",
+    "family": "Cypress Fraunces",
+    "style": "Regular",
+    "weight": 450,
+    "source": "Fraunces-400.woff2",
+    "axes": {
+      "opsz": 72
+    },
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressFraunces-SemiBold.ttf",
+    "family": "Cypress Fraunces",
+    "style": "SemiBold",
+    "weight": 600,
+    "source": "Fraunces-400.woff2",
+    "axes": {
+      "opsz": 72
+    },
+    "asciiComplete": true
+  },
+  {
+    "file": "CypressMono-Regular.ttf",
+    "family": "Cypress Mono",
+    "style": "Regular",
+    "weight": 400,
+    "source": "JetBrainsMono-400.woff2",
+    "axes": {},
+    "asciiComplete": true
+  }
+]

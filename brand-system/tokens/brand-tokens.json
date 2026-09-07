@@ -1,0 +1,63 @@
+{
+  "name": "Cypress Command 04C supporting UI system",
+  "version": "1.0.0",
+  "status": "Approved by Adam Abdalla on 2026-09-06",
+  "format": "Plain JSON; aliases use dotted paths into this document, not a claimed token-tool standard.",
+  "coreColors": {
+    "cypress": "#1E4D3A",
+    "moss": "#2F6B4E",
+    "amber": "#D97706",
+    "charcoal": "#0A1F16",
+    "bone": "#F3EDE0"
+  },
+  "functionalNeutrals": {
+    "description": "Utility neutrals, not additional core brand colors. Mixes use rounded sRGB channels, not linear-light interpolation.",
+    "white": { "value": "#FFFFFF", "derivation": "Functional substrate neutral" },
+    "surface": { "value": "#F9F6F0", "derivation": "50% Bone + 50% White" },
+    "charcoal70": { "value": "#505D53", "derivation": "70% Charcoal + 30% Bone" },
+    "charcoal60": { "value": "#677167", "derivation": "60% Charcoal + 40% Bone" },
+    "bone80": { "value": "#C4C4B8", "derivation": "80% Bone + 20% Charcoal" },
+    "bone70": { "value": "#ADAFA3", "derivation": "70% Bone + 30% Charcoal" },
+    "bone20": { "value": "#39483E", "derivation": "20% Bone + 80% Charcoal" }
+  },
+  "typography": {
+    "display": { "family": "Fraunces", "fallback": "Georgia, serif", "weights": [400, 450, 500, 600], "defaultWeight": 450, "opticalSizing": "auto", "use": "Editorial display and major headings only" },
+    "body": { "family": "Inter", "fallback": "Segoe UI, Arial, sans-serif", "weights": [400, 500, 600, 700], "defaultWeight": 400, "use": "Body, UI, navigation, subheads, labels, and ordinary metadata" },
+    "id": { "family": "JetBrains Mono", "fallback": "Consolas, monospace", "weights": [400, 500], "defaultWeight": 400, "use": "Identifiers and literal reference codes only, not decorative eyebrows or general prose" },
+    "logo": { "family": "Montserrat", "use": "Supplied outlined wordmark artwork only; never recreate the logo with runtime text" },
+    "sizes": { "caption": "0.75rem", "small": "0.875rem", "body": "1rem", "lead": "1.125rem", "h3": "1.5rem", "h2": "clamp(1.75rem, 1.2rem + 2vw, 2.5rem)", "h1": "clamp(2.25rem, 1.5rem + 3vw, 3.5rem)", "display": "clamp(2.75rem, 1.75rem + 4vw, 4.5rem)" },
+    "lineHeight": { "display": 1.12, "heading": 1.2, "body": 1.6, "ui": 1.4 },
+    "tracking": { "display": "-0.02em", "label": "0.08em" }
+  },
+  "spacingPx": { "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40, "12": 48, "16": 64, "20": 80, "24": 96 },
+  "radius": { "none": "0", "small": "2px", "control": "4px", "panel": "8px", "avatar": "50%" },
+  "layout": { "borderWidth": "1px", "controlMinHeight": "44px", "container": "1200px", "readingWidth": "68ch", "gutter": "clamp(16px, 4vw, 40px)" },
+  "motion": { "fast": "120ms", "standard": "200ms", "ease": "cubic-bezier(0.2, 0, 0, 1)", "reducedMotion": "Disable continuous animation; effectively remove transitions and smooth scrolling within the opt-in UI root" },
+  "themes": {
+    "light": {
+      "bg": "coreColors.bone", "surface": "functionalNeutrals.surface.value", "surfaceRaised": "functionalNeutrals.white.value",
+      "text": "coreColors.charcoal", "textSecondary": "coreColors.cypress", "textMuted": "functionalNeutrals.charcoal70.value",
+      "link": "coreColors.cypress", "linkHover": "coreColors.charcoal", "borderControl": "functionalNeutrals.charcoal60.value", "divider": "functionalNeutrals.bone80.value",
+      "actionBg": "coreColors.cypress", "actionText": "coreColors.bone", "actionHoverBg": "coreColors.charcoal", "actionHoverText": "coreColors.bone",
+      "accentBg": "coreColors.amber", "accentText": "coreColors.charcoal", "focus": "coreColors.cypress", "focusGap": "coreColors.bone",
+      "statusText": "coreColors.charcoal", "statusSuccessMark": "coreColors.moss", "statusAttentionMark": "coreColors.charcoal", "statusAttentionFill": "coreColors.amber",
+      "selectionBg": "coreColors.cypress", "selectionText": "coreColors.bone", "shadowPanel": "0 4px 16px rgb(10 31 22 / 0.08)"
+    },
+    "dark": {
+      "bg": "coreColors.charcoal", "surface": "coreColors.cypress", "surfaceRaised": "coreColors.cypress",
+      "text": "coreColors.bone", "textSecondary": "coreColors.bone", "textMuted": "functionalNeutrals.bone80.value",
+      "link": "coreColors.bone", "linkHover": "functionalNeutrals.white.value", "borderControl": "functionalNeutrals.bone70.value", "divider": "functionalNeutrals.bone20.value",
+      "actionBg": "coreColors.bone", "actionText": "coreColors.charcoal", "actionHoverBg": "functionalNeutrals.white.value", "actionHoverText": "coreColors.charcoal",
+      "accentBg": "coreColors.amber", "accentText": "coreColors.charcoal", "focus": "coreColors.bone", "focusGap": "coreColors.charcoal",
+      "statusText": "coreColors.bone", "statusSuccessMark": "coreColors.bone", "statusAttentionMark": "coreColors.charcoal", "statusAttentionFill": "coreColors.amber",
+      "selectionBg": "coreColors.bone", "selectionText": "coreColors.charcoal", "shadowPanel": "none"
+    }
+  },
+  "statusRules": {
+    "success": "Use a check icon plus explicit text such as Complete; the light-theme icon may be Moss, while dark-theme icons use Bone for contrast.",
+    "warning": "Use a triangle icon plus Warning or Attention. If an Amber badge is used, its text and icon are Charcoal.",
+    "error": "Use a stop or cross icon plus Error and a specific corrective message; never distinguish it from warning through color alone.",
+    "prohibited": "No new red, blue, Bayou, Sage, Slate, or other core/status colors. Amber is not normal text on light surfaces. White is not text on Amber."
+  },
+  "accessibility": { "normalTextContrastTarget": 4.5, "essentialBoundaryContrastTarget": 3, "focusOutline": "3px solid theme focus, 3px offset, with a 3px contrasting gap", "decorativeDividers": "Not control boundaries or semantic indicators", "scope": "Verified color pairings only; full interface compliance still requires implementation-level testing" }
+}
